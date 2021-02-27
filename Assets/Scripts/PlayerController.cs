@@ -4,22 +4,36 @@ public class PlayerController : MonoBehaviour
 {
     CharacterController characterController;
     [SerializeField]
-    Joystick joystick; // Fixed Joystick (Joystick Pack / prefabs / Fixed Joystick)
+    Joystick Fixedjoystick; // (Joystick Pack/prefabs/Fixed Joystick)
 
-    private float speedPlayer = 5f;
+    public static int hp;
+    private int maxHP = 10;
+
+    public static float speedPlayer;
+    private float minSpeed = 5f;
+    private float maxSpeed = 10f;
+
     private Vector3 moveVector;
     private float gravityForce;
 
-    #region Lantern
+    #region Lantern(фонарь)
 
     [SerializeField]
     Light lantern;
 
-    private float defValue = 30f;
-    private float adsValue = 100f;
+    // Диапазон свечения фонаря
+    public static float rangeLantern;
+    private float minRange = 10f;
+    private float maxRange = 20f;
+    // Угол свечения фонаря
+    public static float spotAngle;
+    private float minAngle = 30f;
+    private float maxAngle = 100f;
+
+    #endregion
 
     /// <summary>
-    /// Полсе реламы
+    /// После рекламы
     /// </summary>
     public bool ads;
     /// <summary>
@@ -27,16 +41,15 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     public bool noAds;
 
-    #endregion
-
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
-        joystick.GetComponent<Joystick>();
+        Fixedjoystick.GetComponent<Joystick>();
 
-        lantern.GetComponent<Light>();
-
-        DefoultLantern();
+        hp = maxHP;
+        speedPlayer = minSpeed;
+        rangeLantern = minRange;
+        lantern.spotAngle = minAngle;
     }
 
     private void Update()
@@ -44,15 +57,14 @@ public class PlayerController : MonoBehaviour
         Movement();
         Gravity();
 
-        //
         if (ads)
         {
-            DefoultLantern();
+            ADSPlayer();
             ads = false;
         }
         if (noAds)
         {
-            ADSLantern();
+            DefoultPlayer();
             noAds = false;
         }
     }
@@ -61,8 +73,8 @@ public class PlayerController : MonoBehaviour
     {
         moveVector = Vector3.zero;
 
-        moveVector.x = joystick.Horizontal * speedPlayer;
-        moveVector.z = joystick.Vertical * speedPlayer;
+        moveVector.x = Fixedjoystick.Horizontal * speedPlayer;
+        moveVector.z = Fixedjoystick.Vertical * speedPlayer;
 
         if (Vector3.Angle(Vector3.forward, moveVector) > 1f || Vector3.Angle(Vector3.forward, moveVector) == 0)
         {
@@ -86,20 +98,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // фонарик
     /// <summary>
-    /// До рекламы
+    /// Без улучшения
     /// </summary>
-    private void DefoultLantern()
+    private void DefoultPlayer()
     {
-        lantern.GetComponent<Light>().spotAngle = defValue;
+        speedPlayer = minSpeed;
+        rangeLantern = minRange;
+        lantern.spotAngle = minAngle;
     }
 
     /// <summary>
-    /// После рекламы
+    /// С улучшением
     /// </summary>
-    private void ADSLantern()
+    private void ADSPlayer()
     {
-        lantern.GetComponent<Light>().spotAngle = adsValue;
+        speedPlayer = maxSpeed;
+        rangeLantern = maxRange;
+        lantern.spotAngle = maxAngle;
     }
 }

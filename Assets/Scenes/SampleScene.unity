@@ -231,18 +231,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &925755801 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1739520327363185789, guid: f6662b04fa442424e8e00ac4f304f210,
-    type: 3}
-  m_PrefabInstance: {fileID: 4349844127704525300}
-  m_PrefabAsset: {fileID: 0}
---- !u!108 &925755803 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 9186551507326429786, guid: f6662b04fa442424e8e00ac4f304f210,
-    type: 3}
-  m_PrefabInstance: {fileID: 4349844127704525300}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,23 +816,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4349844128670957646, guid: f6662b04fa442424e8e00ac4f304f210,
         type: 3}
-      propertyPath: latent
-      value: 
-      objectReference: {fileID: 925755803}
-    - target: {fileID: 4349844128670957646, guid: f6662b04fa442424e8e00ac4f304f210,
-        type: 3}
-      propertyPath: lantern
-      value: 
-      objectReference: {fileID: 925755801}
-    - target: {fileID: 4349844128670957646, guid: f6662b04fa442424e8e00ac4f304f210,
-        type: 3}
       propertyPath: joystick
       value: 
       objectReference: {fileID: 616172566}
-    - target: {fileID: 9186551507326429786, guid: f6662b04fa442424e8e00ac4f304f210,
-        type: 3}
-      propertyPath: m_SpotAngle
-      value: 30
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6662b04fa442424e8e00ac4f304f210, type: 3}

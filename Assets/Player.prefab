@@ -313,3 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
+  lantern: {fileID: 9186551507326429786}
+  rangeLantern: 10
+  ads: 0
+  noAds: 0
