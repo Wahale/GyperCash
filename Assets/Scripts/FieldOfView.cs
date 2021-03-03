@@ -174,4 +174,16 @@ public class FieldOfView : MonoBehaviour {
 		}
 	}
 
+	// Управление передал на PlayerController
+	public void Def(float _range, float _angle) //
+    {
+		viewRadius = _range;
+		viewAngle = _angle;
+    }
+
+	public void ADS(float _range, float _angle) //
+	{
+		viewRadius = _range;
+		viewAngle = _angle;
+	}
 }

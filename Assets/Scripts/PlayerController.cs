@@ -4,56 +4,66 @@ public class PlayerController : MonoBehaviour
 {
     CharacterController characterController;
     [SerializeField]
-    Joystick joystick; // Fixed Joystick (Joystick Pack / prefabs / Fixed Joystick)
+    private Joystick joystick; // Fixed Joystick (Joystick Pack / prefabs / Fixed Joystick)
 
     private float speedPlayer = 5f;
     private Vector3 moveVector;
     private float gravityForce;
 
     #region Lantern
-
     [SerializeField]
     Light lantern;
 
-    private float defValue = 30f;
-    private float adsValue = 100f;
+    private float minRange = 10f;
+    private float maxRange = 20f;
 
-    /// <summary>
-    /// Полсе реламы
-    /// </summary>
-    public bool ads;
+    private float minSpotAngle = 30f;
+    private float maxSpotAngle = 100f;
+
     /// <summary>
     /// До рекламы
     /// </summary>
     public bool noAds;
-
+    /// <summary>
+    /// Поcле рекламы
+    /// </summary>
+    public bool ads;
     #endregion
+
+    /// <summary>
+    /// Игра началась
+    /// </summary>
+    private bool game;
 
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
         joystick.GetComponent<Joystick>();
+        joystick.gameObject.SetActive(false);
 
         lantern.GetComponent<Light>();
 
-        DefoultLantern();
+        BasicVisibility();
     }
 
     private void Update()
     {
-        Movement();
-        Gravity();
+        if (game)
+        {
+            Movement();
+            Gravity();
+        }
 
         //
-        if (ads)
-        {
-            DefoultLantern();
-            ads = false;
-        }
         if (noAds)
         {
-            ADSLantern();
+            BasicVisibility();
             noAds = false;
+        }
+        if (ads)
+        {
+            ImprovedVisibility();
+            ads = false;
         }
     }
 
@@ -90,16 +100,35 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// До рекламы
     /// </summary>
-    private void DefoultLantern()
+    private void BasicVisibility()
     {
-        lantern.GetComponent<Light>().spotAngle = defValue;
+        lantern.range = minRange;
+        lantern.spotAngle = minSpotAngle;
+
+        GetComponent<FieldOfView>().Def(minRange,minSpotAngle);
     }
 
     /// <summary>
     /// После рекламы
     /// </summary>
-    private void ADSLantern()
+    private void ImprovedVisibility()
     {
-        lantern.GetComponent<Light>().spotAngle = adsValue;
+        lantern.range = maxRange;
+        lantern.spotAngle = maxSpotAngle;
+
+        GetComponent<FieldOfView>().Def(maxRange, maxSpotAngle);
+    }
+
+    // Доступность управления
+    public void Game()
+    {
+        game = true;
+        joystick.gameObject.SetActive(true);
+    }
+
+    public void NoGame()
+    {
+        game = false;
+        joystick.gameObject.SetActive(false);
     }
 }
