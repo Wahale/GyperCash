@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{E701D10D-4F63-232F-1D74-822FCA3AFEB3}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SceneManagement.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="31" Column="35" />
-      <File FileName="Assets/Scripts/SaveAndLoadSystem.cs" Line="41" Column="52" />
+      <File FileName="Assets/SceneManagement.cs" Line="69" Column="9" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="114" Column="36" />
+      <File FileName="Assets/Scripts/FieldOfView.cs" Line="184" Column="48" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GyperCash" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="PlayerController.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
+              <Node name="SceneManagement.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -20,7 +20,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="31c279f0-9370-4171-940d-e6b4e5861f60" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="43ae6512-6c8a-4461-8200-e5fb0cd36cc3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

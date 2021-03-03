@@ -68,6 +68,7 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Editor\FloatingJoystickEditor.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Editor\JoystickEditor.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Editor\VariableJoystickEditor.cs" />
+    <Compile Include="Assets\Scripts\Editor\FieldOfViewEditor.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Volumes/myProgram/Unity_Version/2019.4.18f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
