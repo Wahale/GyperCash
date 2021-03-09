@@ -31,9 +31,9 @@ public class NPC : MonoBehaviour
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        targetPlayer = GameObject.FindGameObjectWithTag("Player").transform;
         agent.speed = speedNPC;
         agent.angularSpeed = 500f;
+        targetPlayer = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void Update()
