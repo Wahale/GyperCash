@@ -2,6 +2,8 @@
 
 public class PlayerController : MonoBehaviour
 {
+    private Animator animator;
+
     CharacterController characterController;
     [SerializeField]
     private Joystick joystick; // Fixed Joystick (Joystick Pack / prefabs / Fixed Joystick)
@@ -37,6 +39,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
         joystick.GetComponent<Joystick>();
         joystick.gameObject.SetActive(false);
@@ -70,9 +73,17 @@ public class PlayerController : MonoBehaviour
     private void Movement()
     {
         moveVector = Vector3.zero;
-
         moveVector.x = joystick.Horizontal * speedPlayer;
         moveVector.z = joystick.Vertical * speedPlayer;
+
+        if (moveVector.x != 0 || moveVector.y != 0)
+        {
+            animator.SetBool("Move", true);
+        }
+        else
+        {
+            animator.SetBool("Move", false);
+        }
 
         if (Vector3.Angle(Vector3.forward, moveVector) > 1f || Vector3.Angle(Vector3.forward, moveVector) == 0)
         {

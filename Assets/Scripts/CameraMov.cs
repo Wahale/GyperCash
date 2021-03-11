@@ -2,12 +2,13 @@
 
 public class CameraMov : MonoBehaviour
 {
-    [SerializeField]
     private GameObject player;
-    Vector3 offset;
+    private Vector3 offset;
 
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+
         offset = transform.position - player.transform.position;
     }
 
