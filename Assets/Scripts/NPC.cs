@@ -20,7 +20,8 @@ public class NPC : MonoBehaviour
     /// <summary>
     /// Скорость NPC
     /// </summary>
-    public float speedNPC;
+    [SerializeField]
+    private float speedNPC;
 
     #region Эффект при обнаружении игрока
     //private bool playerVisible;
