@@ -142,4 +142,14 @@ public class PlayerController : MonoBehaviour
         game = false;
         joystick.gameObject.SetActive(false);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            game = false;
+            animator.SetTrigger("Dead");
+            Debug.Log("Проиграл");
+        }
+    }
 }
