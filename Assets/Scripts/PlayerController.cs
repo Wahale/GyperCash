@@ -142,4 +142,35 @@ public class PlayerController : MonoBehaviour
         game = false;
         joystick.gameObject.SetActive(false);
     }
+
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            game = false;
+            animator.SetTrigger("Dead");
+            Debug.Log("Проиграл");
+        }
+=======
+=======
+>>>>>>> Stashed changes
+    public void Finish()
+    {
+        game = false;
+        joystick.gameObject.SetActive(false);
+        animator.SetTrigger("Finish");
+    }
+
+    public void Dead()
+    {
+        game = false;
+        joystick.gameObject.SetActive(false);
+        animator.SetTrigger("Dead");
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+    }
 }
