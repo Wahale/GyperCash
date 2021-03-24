@@ -15,10 +15,13 @@ GameObject:
   - component: {fileID: 908766883}
   - component: {fileID: 5541694196466624570}
   m_Layer: 0
+<<<<<<< Updated upstream:Assets/Prefabs/Enemy_Prefab.prefab
 <<<<<<< Updated upstream:Assets/Prefabs/Enemy.prefab
   m_Name: Enemy
   m_TagString: Enemy
 =======
+=======
+>>>>>>> Stashed changes:Assets/Prefabs/Enemy.prefab
   m_Name: Enemy_Prefab
   m_TagString: Untagged
 >>>>>>> Stashed changes:Assets/Prefabs/Enemy_Prefab.prefab

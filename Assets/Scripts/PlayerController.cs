@@ -144,6 +144,7 @@ public class PlayerController : MonoBehaviour
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
@@ -153,6 +154,8 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Проиграл");
         }
 =======
+=======
+>>>>>>> Stashed changes
     public void Finish()
     {
         game = false;
@@ -165,6 +168,9 @@ public class PlayerController : MonoBehaviour
         game = false;
         joystick.gameObject.SetActive(false);
         animator.SetTrigger("Dead");
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
 }
