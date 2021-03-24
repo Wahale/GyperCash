@@ -143,6 +143,7 @@ public class PlayerController : MonoBehaviour
         joystick.gameObject.SetActive(false);
     }
 
+<<<<<<< Updated upstream
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
@@ -151,5 +152,19 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("Dead");
             Debug.Log("Проиграл");
         }
+=======
+    public void Finish()
+    {
+        game = false;
+        joystick.gameObject.SetActive(false);
+        animator.SetTrigger("Finish");
+    }
+
+    public void Dead()
+    {
+        game = false;
+        joystick.gameObject.SetActive(false);
+        animator.SetTrigger("Dead");
+>>>>>>> Stashed changes
     }
 }
