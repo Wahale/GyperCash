@@ -2,8 +2,7 @@
 
 public class PlayerController : MonoBehaviour
 {
-    private Animator animator;
-
+    private Animator animator; 
     CharacterController characterController;
     [SerializeField]
     private Joystick joystick; // Fixed Joystick (Joystick Pack / prefabs / Fixed Joystick)
@@ -143,19 +142,6 @@ public class PlayerController : MonoBehaviour
         joystick.gameObject.SetActive(false);
     }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            game = false;
-            animator.SetTrigger("Dead");
-            Debug.Log("Проиграл");
-        }
-=======
-=======
->>>>>>> Stashed changes
     public void Finish()
     {
         game = false;
@@ -168,9 +154,5 @@ public class PlayerController : MonoBehaviour
         game = false;
         joystick.gameObject.SetActive(false);
         animator.SetTrigger("Dead");
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     }
 }
