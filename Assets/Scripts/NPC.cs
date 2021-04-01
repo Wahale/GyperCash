@@ -3,6 +3,8 @@ using UnityEngine.AI;
 
 public class NPC : MonoBehaviour
 {
+    private Animator animator;
+
     private NavMeshAgent agent;
 
     /// <summary>
@@ -23,6 +25,8 @@ public class NPC : MonoBehaviour
     [SerializeField]
     private float speedNPC;
 
+    private bool finish;
+
     #region Эффект при обнаружении игрока
     //private bool playerVisible;
     //public float time;
@@ -31,10 +35,13 @@ public class NPC : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.speed = speedNPC;
         agent.angularSpeed = 500f;
         targetPlayer = GameObject.FindGameObjectWithTag("Player").transform;
+
+        finish = false;
     }
 
     private void Update()
@@ -43,6 +50,11 @@ public class NPC : MonoBehaviour
             (gameObject.transform.position, targetPlayer.transform.position);
 
         Movement();
+
+        if (finish)
+        {
+            Finish();
+        }
     }
 
     /// <summary>
@@ -53,9 +65,29 @@ public class NPC : MonoBehaviour
         if (currentDisToTarget < distanceAttack)
         {
             agent.SetDestination(targetPlayer.position);
+            animator.SetBool("Run", true);
 
+            agent.Resume();
             Effects();
         }
+        else
+        {
+            agent.Stop();
+            animator.SetBool("Run", false);
+        }
+    }
+
+    private void Finish()
+    {
+        agent.Stop();
+        animator.SetTrigger("Attack");
+        agent.Stop();
+    }
+
+    public void Lost()
+    {
+        agent.Stop();
+        animator.SetTrigger("Lost");
     }
 
     /// <summary>
@@ -71,6 +103,8 @@ public class NPC : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.GetComponent<PlayerController>().Dead();
+
+            finish = true;
         }
     }
 }

@@ -147,6 +147,15 @@ public class PlayerController : MonoBehaviour
         game = false;
         joystick.gameObject.SetActive(false);
         animator.SetTrigger("Finish");
+        GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
+
+        for (int i = 0; i < enemys.Length; i++)
+        {
+            enemys[i].GetComponent<NPC>().Lost();
+        }
+
+        GameObject managerS = GameObject.FindGameObjectWithTag("ManagerScene");
+        managerS.GetComponent<SceneManagement_Script>().GameOverVictory();
     }
 
     public void Dead()
@@ -154,5 +163,8 @@ public class PlayerController : MonoBehaviour
         game = false;
         joystick.gameObject.SetActive(false);
         animator.SetTrigger("Dead");
+
+        GameObject managerS = GameObject.FindGameObjectWithTag("ManagerScene");
+        managerS.GetComponent<SceneManagement_Script>().GameOverLost();
     }
 }

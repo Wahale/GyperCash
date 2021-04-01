@@ -76,7 +76,8 @@
     <Compile Include="Assets\Scripts\Finish.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\SceneManagement.cs" />
+    <Compile Include="Assets\Scripts\SaveAndLoad.cs" />
+    <Compile Include="Assets\Scripts\SceneManagement_Script.cs" />
     <Compile Include="Assets\Scripts\Start_Finish_Point.cs" />
     <Compile Include="Assets\Scripts\Vibration.cs" />
     <None Include="Assets\Shaders\StencilMask.shader" />

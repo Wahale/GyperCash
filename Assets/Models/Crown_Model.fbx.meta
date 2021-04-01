@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: e9fc19387a3586e43b5a34cdb3994357
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: -203655887218126122
+    second: Idle_Enemy
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle_Enemy
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 365
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: crown_c:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: crown_c:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Crown_fbx@Old Man Idle(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: crown_c:Plane003
+      parentName: Crown_fbx@Old Man Idle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: crown_c:Hips
+      parentName: Crown_fbx@Old Man Idle(Clone)
+      position: {x: -0.00014212586, y: 0.14402288, z: -0.011005729}
+      rotation: {x: 0.000000011641532, y: 0.0000000014551917, z: 3.6379794e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: crown_c:Spine
+      parentName: crown_c:Hips
+      position: {x: -0, y: 0.026770553, z: -0.00080574036}
+      rotation: {x: -0.015043856, y: 5.4728444e-12, z: -3.637568e-10, w: 0.9998869}
+      scale: {x: 1, y: 1, z: 1}
+    - name: crown_c:Spine1
+      parentName: crown_c:Spine
+      position: {x: -0, y: 0.031246461, z: 4.440892e-18}
+      rotation: {x: -0.00000009499489, y: -0.0000000014545328, z: -4.3778522e-11,
+        w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+    - name: crown_c:Spine2
+      parentName: crown_c:Spine1
+      position: {x: -0, y: 0.035710227, z: 0}
+      rotation: {x: 0.000000025145695, y: -7.053774e-10, z: -7.4915596e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: crown_c:Neck
+      parentName: crown_c:Spine2
+      position: {x: -0, y: 0.040174015, z: 0.000000003491952}
+      rotation: {x: 0.015043937, y: 0.0000000021715947, z: 7.603512e-10, w: 0.9998869}
+      scale: {x: 1, y: 1, z: 1}
+    - name: crown_c:Head
+      parentName: crown_c:Neck
+      position: {x: -0, y: 0.022766419, z: -0.005859508}
+      rotation: {x: -0.000000046566125, y: -0.0000000014551915, z: -7.2759576e-10,
+        w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000002}
+    - name: crown_c:HeadTop_End
+      parentName: crown_c:Head
+      position: {x: -0, y: 0.1324606, z: -0.03409206}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: crown_c:RightShoulder
+      parentName: crown_c:Spine2
+      position: {x: 0.01681778, y: 0.035827395, z: -0.0001319828}
+      rotation: {x: -0.5559712, y: -0.43579537, z: 0.56030804, w: -0.43247342}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000007}
+    - name: crown_c:RightArm
+      parentName: crown_c:RightShoulder
+      position: {x: -0, y: 0.034977574, z: 3.5527136e-17}
+      rotation: {x: 0.13615093, y: 0.0027566701, z: -0.020054877, w: -0.9904813}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: crown_c:RightForeArm
+      parentName: crown_c:RightArm
+      position: {x: -0, y: 0.038887084, z: 7.105427e-17}
+      rotation: {x: -0.0015288591, y: 0.000029956456, z: -0.019614285, w: 0.99980646}
+      scale: {x: 1.0000005, y: 0.9999998, z: 1.0000002}
+    - name: crown_c:RightHand
+      parentName: crown_c:RightForeArm
+      position: {x: 4.440892e-18, y: 0.04081475, z: -3.5527136e-17}
+      rotation: {x: -0, y: -0, z: -7.6692785e-10, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000006}
+    - name: crown_c:LeftShoulder
+      parentName: crown_c:Spine2
+      position: {x: -0.01681778, y: 0.035827328, z: -0.00012965927}
+      rotation: {x: 0.5560107, y: -0.43576473, z: 0.56027055, w: 0.43250215}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: crown_c:LeftArm
+      parentName: crown_c:LeftShoulder
+      position: {x: -0, y: 0.034977574, z: -3.5527136e-17}
+      rotation: {x: -0.13617288, y: 0.002684608, z: -0.01952684, w: 0.990489}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000004}
+    - name: crown_c:LeftForeArm
+      parentName: crown_c:LeftArm
+      position: {x: -0, y: 0.038886044, z: 0}
+      rotation: {x: -0.0012970716, y: -0.000018115854, z: 0.014033885, w: 0.99990076}
+      scale: {x: 1.0000006, y: 0.9999998, z: 1.0000002}
+    - name: crown_c:LeftHand
+      parentName: crown_c:LeftForeArm
+      position: {x: -0, y: 0.040813208, z: 0}
+      rotation: {x: -0, y: -0, z: -2.1449506e-10, w: 1}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+    - name: crown_c:LeftUpLeg
+      parentName: crown_c:Hips
+      position: {x: -0.024057977, y: -0.01488142, z: 0.0011060929}
+      rotation: {x: -0.000024783323, y: 0.0014127477, z: 0.9998453, w: 0.017532311}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: crown_c:LeftLeg
+      parentName: crown_c:LeftUpLeg
+      position: {x: -4.440892e-18, y: 0.063722946, z: 0}
+      rotation: {x: -0.04775392, y: -0.0011645379, z: 0.024350759, w: 0.9985616}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: crown_c:LeftFoot
+      parentName: crown_c:LeftLeg
+      position: {x: -0, y: 0.046414107, z: 4.440892e-18}
+      rotation: {x: 0.52678895, y: 0.07011105, z: -0.043658268, w: 0.84597385}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: crown_c:LeftToeBase
+      parentName: crown_c:LeftFoot
+      position: {x: 4.440892e-18, y: 0.029597292, z: 8.881784e-18}
+      rotation: {x: 0.27058816, y: -0.006544445, z: 0.001839541, w: 0.9626712}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: crown_c:LeftToe_End
+      parentName: crown_c:LeftToeBase
+      position: {x: 4.440892e-18, y: 0.0132297175, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: crown_c:RightUpLeg
+      parentName: crown_c:Hips
+      position: {x: 0.024057977, y: -0.01488142, z: 0.0016681647}
+      rotation: {x: 0.00005502277, y: 0.0031389722, z: 0.9998414, w: -0.01753196}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: crown_c:RightLeg
+      parentName: crown_c:RightUpLeg
+      position: {x: -0, y: 0.06372395, z: 0}
+      rotation: {x: -0.052070875, y: 0.0012699082, z: -0.02434774, w: 0.99834573}
+      scale: {x: 1, y: 0.9999997, z: 1}
+    - name: crown_c:RightFoot
+      parentName: crown_c:RightLeg
+      position: {x: -4.440892e-18, y: 0.046437133, z: -4.440892e-18}
+      rotation: {x: 0.5198285, y: -0.0734997, z: 0.044954218, w: 0.8499149}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1}
+    - name: crown_c:RightToeBase
+      parentName: crown_c:RightFoot
+      position: {x: 4.440892e-18, y: 0.028618312, z: -4.440892e-18}
+      rotation: {x: 0.2807881, y: 0.01175368, z: -0.003438864, w: 0.9596917}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: crown_c:RightToe_End
+      parentName: crown_c:RightToeBase
+      position: {x: 4.440892e-18, y: 0.013157185, z: 3.469447e-20}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
